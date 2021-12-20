@@ -1,6 +1,6 @@
 #typeDiv {
 	position: absolute;
-	top: 45%;
+	top: 35%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -61,12 +61,16 @@
 	position: absolute;
 	display: table;
 	vertical-align: middle;
-	top: 80%;
+	top: 60%;
 	left: 0;
 	right: 0;
 	margin: auto;
 	width: 10%;
 	height: 8%;
+}
+
+.displaynone{
+	display:none;
 }
 
 #clickMe{

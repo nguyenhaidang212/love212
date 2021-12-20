@@ -15,6 +15,8 @@ function showImage(){
 }
 
 function play(){
+	var audio = new Audio('music/music.mp3');
+audio.play();
 	if(t == 0){
 		myImage.setAttribute("src", "");
 		myTxt.innerHTML = "";
@@ -23,6 +25,7 @@ function play(){
 	}
 	flag = 1 - flag;
 	document.getElementById("typeDiv").style.opacity = flag;
+	document.getElementById("heartTxt").style.opacity = 0;
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
 	if(t == 0){
 		//setTimeout(showImage, 1000);
