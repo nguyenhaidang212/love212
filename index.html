@@ -1,0 +1,77 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Ngày Kỉ Niệm của chúng mình</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">BẤM ZO ĐÂY NÈ</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">CHÚC MỪNG NGÀY KỶ NIỆM CỦA CHÚNG TA</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.jpg", "pic/pic2.jpg", "pic/pic3.jpg", "pic/pic4.jpg", "pic/pic5.jpg", "pic/pic6.jpg", 
+			"pic/pic7.jpg", "pic/pic8.jpg", "pic/pic9.jpg", "pic/pic10.jpg", "pic/pic11.jpg", "pic/pic12.jpg", "pic/pic13.jpg",
+			"pic/pic14.jpg", "pic/pic15.jpg", "pic/pic16.jpg", "pic/pic17.jpg", "pic/pic18.jpg", "pic/pic19.jpg", "pic/pic20.jpg",
+			"pic/pic21.jpg", "pic/pic22.jpg", "pic/pic23.jpg", "pic/pic24.jpg", "pic/pic25.jpg", "pic/pic26.jpg", "pic/pic27.jpg",
+			"pic/pic28.jpg", "pic/pic29.jpg", "pic/pic30.jpg", "pic/pic31.jpg", "pic/pic32.jpg", "pic/pic33.jpg", "pic/pic34.jpg",
+			"pic/pic38.jpg", "pic/pic39.jpg", "pic/pic40.jpg", "pic/pic41.jpg", "pic/pic42.jpg", "pic/pic43.jpg", "pic/pic44.jpg",
+			"pic/pic45.jpg", "pic/pic46.jpg", "pic/pic47.jpg", "pic/pic48.jpg", "pic/pic49.jpg", "pic/pic50.jpg"];
+			var imageIndex = 0;
+			var txtArray = ["Ảnh đầu tiên nhá", "Khá ngầu với cô pé 2 tủi", "1 bé heo đáng iu",
+                "Ủa, lộ hàng kìa em ơi", "Chế độ thiểu năng", "Dọn về cùng nhà, à quên cùng trọ với ngiu", "Lại gặp cô pé dễ thường",
+			 "Minh heo kây ở Cicle K", "Em đi đâu vậy ?", "Lại diễn tiếp nì", "Hết diễn lại làm Minh thiểu năng", 
+			 "Ủa, sáng rồi tới trưa :D ??", "Tối làm heo chink đi chơi noel", "Chúc mừng năm mới!!!", "Minh heo đến Ga Hà Nội",
+			 "2 đứa ngồi đợi trước khi Hải Đeng đi ẻ", "2 đứa tất bật sáng sớm ", "Quá trời chink lun", "Quá trời mê heo",
+			 "Đi cafe mà ngồi uống đúng 5p cuối", "Bó hoa này ngày xưa đẹp bao nhiu", "Ngày tuyệt vời!!!", "Đôi vợ chồng trẻ",
+			 "Diễn tiêp part 3", "Sau đó lại trờ về thiểu năng :v", "Heo chink và ngiu", "Heo chink quá trời",
+			 "Heo vẫn đang chink nè", "Heo và bạn heo :vv", "Heo và lợn trong ngày sinh nhật lợn kaka", "Heo và lợn là đôi bạn tri kỉ",
+			 "Heo tự tin khoe cá tính", "HEO", "Đáng iu nhít chụt chụt", "Em làm cô sinh viên năng động", 
+			 "Em là cô bé heo tròn", "Em làm con chó :) ", "1 bức ảnh chink", "1 bức ảnh siêu chink",
+			 "1 bức ảnh quá trời chink của em", "Heo ảo ma canada", "Heo đi mát xa=))))", "Nhớ bé iu",
+			 "Iu béo nhít", "Cô bé khi dễ thương", "Cô bé khi dận dỗi", "Cô bé khi trốn mẹ bạn :vv",
+			 "1 trái tim to tròn và trắng múp :v", "Chúc mừng ngày kỷ niệm nhá kakakaka", "Hải Đeng và Ngọc Mong hòa vào 1 =))))))"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
